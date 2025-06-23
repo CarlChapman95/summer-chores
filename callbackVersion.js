@@ -11,9 +11,10 @@ function weedEat(name, callback) {
         let tiredness = Math.floor(Math.random() * 100) + 1;
         if(tiredness > 33) {
         console.log(`${name} finished using the weed eater.`);
+        callback();
         } else {
             console.log(`${name} fell asleep after mowing the yard.`);
-            callback();
+            
         }
     }, 1500);
 }
@@ -23,9 +24,10 @@ function trimHedges(name, callback) {
         let tiredness = Math.floor(Math.random() * 100) + 1;
         if(tiredness > 33) {
         console.log(`${name} finished trimming the hedges.`);
+        callback();
         } else {
             console.log(`${name} fell asleep after weed eating the yard.`);
-            callback();
+            
         }
     }, 1000);
 }
@@ -35,9 +37,10 @@ function collectWood(name, callback) {
         let tiredness = Math.floor(Math.random() * 100) + 1;
         if(tiredness > 33) {
         console.log(`${name} finished collecting wood.`);
+        callback();
         } else {
             console.log(`${name} fell asleep after trimming the hedges.`);
-            callback();
+            
         }
     }, 2500);
 }
@@ -47,9 +50,10 @@ function waterGarden(name, callback) {
         let tiredness = Math.floor(Math.random() * 100) + 1;
         if(tiredness > 33) {
         console.log(`${name} finished watering the garden.`);
+        callback();
         } else {
             console.log(`${name} fell asleep after collecting wood.`);
-            callback();
+            
         }
     }, 500);
 }
