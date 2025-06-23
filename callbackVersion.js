@@ -67,3 +67,5 @@ function doSummerChores(name) {
         });
     });
 }
+
+doSummerChores("Carl");
