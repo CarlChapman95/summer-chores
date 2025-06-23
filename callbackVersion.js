@@ -55,5 +55,15 @@ function waterGarden(name, callback) {
 }
 
 function doSummerChores(name) {
-
+    mowYard(name, () => {
+        weedEat(name, () => {
+            trimHedges(name, () => {
+                collectWood(name, () => {
+                    waterGarden(name, () => {
+                        console.log(`${name} finished all their chores!`);
+                    });
+                });
+            });
+        });
+    });
 }
