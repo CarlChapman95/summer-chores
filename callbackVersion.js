@@ -1,33 +1,33 @@
-function mowYard() {
+function mowYard(name, callback) {
 
     setTimeout(() => {
-        console.log(`You mowed the yard.`);
+        console.log(`${name} mowed the yard.`);
     }, 2000);
 }
-function weedEat() {
+function weedEat(name, callback) {
 
     setTimeout(() => {
-        console.log(`You finished using the weed eater.`);
+        console.log(`${name} finished using the weed eater.`);
     }, 1500);
 }
-function trimHedges() {
+function trimHedges(name, callback) {
 
     setTimeout(() => {
-        console.log(`You finished trimming the hedges.`);
+        console.log(`${name} finished trimming the hedges.`);
     }, 1000);
 }
-function collectWood() {
+function collectWood(name, callback) {
 
     setTimeout(() => {
-        console.log(`You finished collecting wood.`);
+        console.log(`${name} finished collecting wood.`);
     }, 2500);
 }
-function waterGarden() {
+function waterGarden(name, callback) {
 
     setTimeout(() => {
-        console.log(`You finished watering the garden.`);
+        console.log(`${name} finished watering the garden.`);
     }, 500);
 }
-function doSummerChores() {
+function doSummerChores(name) {
 
 }
