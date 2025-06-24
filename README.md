@@ -8,3 +8,6 @@ Credits: I would like to thank me. I figured it out! But in all seriousness. Eve
 
 Promises: For this segment, changed everything from callbacks to promises with the resolve and reject logic's. And also by using .then in the big function. This makes it way easier to read. 
 Photo of the nicer looking functions: ![alt text](image.png)
+
+Async Await: Changed the doSummerChores function to a Async. Then the code inside to a try loop with nested awaiting all of the individual chores.
+As seen here: ![alt text](image-1.png)
