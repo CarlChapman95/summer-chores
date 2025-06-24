@@ -64,7 +64,16 @@ function waterGarden(name) {
 }
 
 async function doSummerChores(name) {
-    
+    try {
+        await mowYard(name);
+        await weedEat(name);
+        await trimHedges(name);
+        await collectWood(name);
+        await waterGarden(name);
+        console.log(`${name} finished all their chores!`);
+    } catch (error) {
+        console.log(error);
+    }
         
 }
 
